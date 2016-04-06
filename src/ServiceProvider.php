@@ -3,7 +3,7 @@
 namespace Minhbang\Locale;
 
 use Illuminate\Foundation\AliasLoader;
-use Illuminate\Support\ServiceProvider as BaseServiceProvider;
+use Minhbang\Kit\Extensions\BaseServiceProvider;
 
 /**
  * Class ServiceProvider
