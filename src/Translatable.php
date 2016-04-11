@@ -394,7 +394,6 @@ trait Translatable
     public function scopeTranslatedIn(Builder $query, $locale = null)
     {
         $locale = LocaleManager::getLocale($locale);
-
         return $query->whereHas('translations', function (Builder $q) use ($locale) {
             $q->where('locale', '=', $locale);
         });
